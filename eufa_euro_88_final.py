@@ -24,7 +24,7 @@ print(report)
 player2 = "Ronald Koeman"
 
 find_space = player2.find(" ")
-first_name = player2[0:find_space]
+first_name = player2[:find_space]
 
 print (first_name)
 
@@ -38,7 +38,7 @@ name_short = player2[0]
 
 print (name_short + ". " + last_name)
 
-players_fn = player2[0:find_space]
+players_fn = player2[:find_space]
 bang = "! "
 
 first_name_with = players_fn + bang
@@ -47,9 +47,10 @@ players_fn_len = (len(players_fn))
 chant = players_fn_len* first_name_with
 
 space_at_end = chant[:-1]
-good_chant = space_at_end
+good_chant = space_at_end[:-1] != " "
 
 print (good_chant)
+print (space_at_end)
 
 
 

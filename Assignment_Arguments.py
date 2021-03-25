@@ -1,28 +1,33 @@
 # Do not modify these lines
+from string import Template
 __winc_id__ = '7b9401ad7f544be2a23321292dd61cb6'
 __human_name__ = 'arguments'
 
 # Add your code after this line
 # Greet
-def greet(name='', what=""):
-    greet_no_space=(f'Hello, {name}' + "!" )
-    what=(f'What\'s up, {name}' + "!")
-    if name == 'Doc':
-        print(greet_no_space)
-    if name == 'Bob':
-        print(what)
-greet('Doc')
-greet('Bob', "What's up, {name}!")
+
+def greet(name, template="Hello,{name}!"):
+    template = f'"Hello, {name}!"'
+    template2 = f"What's up, {name}!"
+    if (name=="Bob"):
+        print(template2)
+    else:
+       print(template)
+greet("Peter")
+greet("Doc")
+greet("David")
+greet("Bob", "What's up,{name}")
+
 
 # Force
-
 dict_planets = {"earth": 9.7, "sun": 274, "jupiter": 24.9, "neptune": 11.1, "saturn": 10.4,
                 "uranus": 8.8, "venus": 8.8, "mars": 3.7, "mercury": 3.7, "moon": 1.6, "pluto": 0.5}
 mass = {"earth": 59736, "sun": 19891, "jupiter": 18986, "neptune": 10243, "saturn": 56846,
         "uranus": 86810, "venus": 48685, "mars": 64185, "mercury": 33022, "moon": 7349, "pluto": 125}
-body = ("earth", "sun", "jupiter", "neptune", "saturn", "uranus", "venus", "mars", "mercury", "moon", "pluto")
+body = ("earth", "sun", "jupiter", "neptune", "saturn",
+        "uranus", "venus", "mars", "mercury", "moon", "pluto")
 
-#to the power of = ttpo
+#to the power of = ttpo, earth ttpo =  
 earth_ttpo = 10**24
 times_mass_earth = earth_ttpo * mass["earth"]
 final_outcome = times_mass_earth * dict_planets["earth"]
@@ -57,6 +62,7 @@ pluto_ttpo = 10**22
 times_mass_pluto = pluto_ttpo * mass["pluto"]
 final_outcome10 = times_mass_pluto * dict_planets["pluto"]
 
+
 def force(mass=(float), body="earth"):
     if mass == 59736 and body == "earth":
         print(final_outcome)
@@ -80,19 +86,26 @@ def force(mass=(float), body="earth"):
         print(final_outcome9)
     if mass == 125 and body == "pluto":
         print(final_outcome10)
+
+
 force(59736, "earth")
 force(19891, "sun")
 force(7349, "moon")
 #enzo
-
 
 #Two Cars
 #Apple (earth mass = 5.972e+24 (5972190000000000000000000) and distance = 6371000)
 m1 = float(input("Enter the first mass: "))
 m2 = float(input("Enter the second mass: "))
 r = float(input("Enter the distance between the centres of the masses: "))
-G = 6.674*(10**-11)
-f = (G*m1*m2)/(r**2)
-print("the gravitational force is: ", round(f, 6), "N")
+
+def pull(m1,m2,r):
+    G = 6.674*(10**-11)
+    f = (G*m1*m2)/(r**2)
+    if pull:
+        print("the gravitational force is: ", round(f, 6), "N")
 
 
+#print("the gravitational force is: ", round(f, 6), "N")
+#print(pull(m1, m2, r)))
+pull(m1, m2, r)

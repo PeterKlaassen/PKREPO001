@@ -8,12 +8,12 @@ __human_name__ = 'arguments'
 
 def greet(name, template="Hello, <name>!"):
     template.replace("<name>", name)
-    print(template.replace("<name>", name))
-greet("David")
-greet("Doc")
-greet("Python")
-greet("Bob", "What's up, <name>!")
-greet("Peet", "Power to you!: " "<name>")
+    return(template.replace("<name>", name))
+print(greet("David"))
+print(greet("Doc"))
+print(greet("Python"))
+print(greet("Bob", "What's up, <name>!"))
+print(greet("Peet", "Power to you!: " "<name>"))
 
 # Force
 
@@ -31,12 +31,9 @@ def force(mass:float, body="earth"):
     "moon": 1.6,
     "pluto": 0.5
     }
-    earth = mass * planets_dict.get("earth")
-    if "earth":
-        return earth
-    sun = mass * planets_dict.get("sun")
-    if "sun":
-        return sun
+    output = mass * planets_dict.get(body)
+
+    return output
 
 print(force(59736.1, "earth"))
 print(force(19891.1, "sun"))
@@ -44,17 +41,11 @@ print(force(19891.1, "sun"))
 
 #Pull
 
-m1 = float(input("Enter the first mass: "))
-m2 = float(input("Enter the second mass: "))
-r = float(input("Enter the distance between the centres of the masses: "))
-
 def pull(m1,m2,r):
+
     G = 6.674 * 10 ** -11
     f = G * ((m1 * m2) / r ** 2)
-    if pull:
-        return("the gravitational force is: ", f, "N")
+    return(f)
+    
+print(pull(800, 1500, 3))
 
-
-#print("the gravitational force is: ", round(f, 6), "N")
-#print(pull(m1, m2, r)))
-pull(m1, m2, r)

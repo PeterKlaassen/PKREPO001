@@ -1,0 +1,40 @@
+body {
+  background-color: darkgrey;
+  font: normal 18px Dancing script, Helvetica, sans-serif;
+  line-height: 2.5em;
+}
+ul,
+h1,
+h2,
+h4,
+.black-border {
+  border: 1px solid black;
+}
+h1,
+h2,
+h4,
+h5,
+ul,
+#green-background {
+  background-color: rgb(125, 233, 125);
+}
+ul{list-style-position:inside;}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+nav,
+footer,
+ul {
+  text-align: center;
+}
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+<IMG class="displayed" src="PeterKlaassen1.png">
+<IMG class="displayed" src="Chelsea1.png">
+<IMG class="displayed" src="fp1.png">

@@ -1,3 +1,3 @@
 # PKREPO001
-Winc First Repo
+Winc Academy First Repository.
 Hi, I'm Peter Klaassen and i opened a repository for sharing my code.

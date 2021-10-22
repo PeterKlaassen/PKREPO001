@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact</title>
+  </head>
+  <body class="body-background">
+    <header class="header-sett black-background">
+      <nav class="text-all-center-txt-dec-ovrflw">
+        <ul class="navbar ul-sett">
+          <li class="li-hover">
+            <a
+              class="a-sett text-all-center-txt-dec-ovrflw fontstyle1-header"
+              href="index.html"
+              >HOME</a
+            >
+          </li>
+          <li class="li-hover">
+            <a
+              class="a-sett text-all-center-txt-dec-ovrflw fontstyle1-header"
+              href="about.html"
+              >ABOUT</a
+            >
+          </li>
+          <li class="li-hover">
+            <a
+              class="a-sett text-all-center-txt-dec-ovrflw fontstyle1-header"
+              href="Contact.html"
+              >CONTACT</a
+            >
+          </li>
+            <li class="li-hover">
+            <a
+              class="a-sett text-all-center-txt-dec-ovrflw fontstyle1-header"
+              href="blog.html"
+              >BLOG</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-background">
+      <div class="text-all-center-txt-dec-ovrflw">
+        <article>
+          <section>
+            <h2
+              class="
+                black-border
+                light-blue-headings-letters
+                darkblue-background
+                text-all-center-txt-dec-ovrflw
+                fontstyle2-h2
+              "
+            >
+              <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                  <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                  <label
+                    >Telnumber: <input type="tel" name="telephone"
+                  /></label>
+                </p>
+                <p>
+                  <label
+                    >Birthdate:
+                    <input
+                      type="date"
+                      name="birthdate"
+                      widget="date"
+                      default="''"
+                      format="MMM Do YY"
+                  /></label>
+                </p>
+                <p>
+                  <label
+                    >Male:
+                    <input type="radio" name="Attending" value="Attending" />
+                    Select if male</label
+                  >
+                </p>
+                <p>
+                  <label
+                    >Female:
+                    <input type="radio" name="Attending" value="Attending" />
+                    Select if female</label
+                  >
+                </p>
+                <p class="checkbox-label">Favorite Cuisine:*</p>
+                <div name="checkbox-container" class="checkbox-container">
+                  <label class="checkbox-wrapper"
+                    >French
+                    <input type="checkbox" name="French" id="French-checkbox" />
+                  </label>
+                  <label class="checkbox-wrapper"
+                    >Italian
+                    <input
+                      type="checkbox"
+                      name="Italian"
+                      id="Italian-checkbox"
+                    />
+                  </label>
+                  <label class="checkbox-wrapper"
+                    >Spanish
+                    <input
+                      type="checkbox"
+                      name="Spanish"
+                      id="Spanish-checkbox"
+                    />
+                  </label>
+                  <label class="checkbox-wrapper"
+                    >Arabic
+                    <input type="checkbox" name="Arabic" id="Arabic-checkbox" />
+                  </label>
+                </div>
+                <label
+                  >Favorite apron color:* <input name="color" type="color"
+                  widget: color enablealpha: true, allowinput: true/></label
+                >
+                <p>
+                  <label>Biography: <textarea name="message"></textarea></label>
+                </p>
+                <p
+                  name="Upload your latest recipe"
+                  method="POST"
+                  data-netlify="true"
+                >
+                  <input type="reset" value="Reset" />
+                  <p>
+                    <label
+                      >Upload your latest recipe:
+                      <input type="file" name="recipe"
+                    /></label>
+                  </p>
+
+                </p>
+                  <p>
+                    <label for="url"
+                      >Enter an recipe website https:// URL:</label
+                    >
+                    <input
+                      type="url"
+                      name="url"
+                      id="url"
+                      placeholder="https://example.com"
+                      pattern="https://.*"
+                      size="30"
+                      required
+                    />
+                  </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
+            </h2>
+          </section>
+        </article>
+        <hr />
+      </div>
+    </main>
+  </body>
+  <footer class="footer-black-width text-all-center-txt-dec-ovrflw">
+    Copyright PK
+  </footer>
+</html>

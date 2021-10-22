@@ -1,0 +1,164 @@
+.body-background {
+  /* background-image: url("adam1.jpg");*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.black-background {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid;
+  overflow: hidden;
+
+}
+
+.main-background {
+  background: rgba(223, 221, 221, 0.678);
+  margin: auto;
+  width: auto;
+
+}
+
+.light-blue-headings-letters {
+  color: rgb(177, 217, 236);
+}
+
+.a-sett {
+  border: 2px;
+  color: rgb(249, 249, 249);
+  font: bold 22px Arial, Helvetica, sans-serif;
+  margin: 30px;
+  padding: 2px;
+  text-decoration: none;
+}
+
+.black-border {
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  border-spacing: 1px;
+  border-style: outset;
+  margin: 16px;
+  padding: 2px;
+}
+
+.darkblue-background {
+  background-color: rgb(4, 4, 83);
+}
+
+.text-all-center-txt-dec-ovrflw {
+  font: bold 30px Dancing script, Helvetica, sans-serif;
+  font-style: oblique;
+  line-height: 1.6em;
+  overflow: hidden;
+  text-align: center;
+}
+
+.fontstyle1-header {
+  font: bold 22px arial, Helvetica, sans-serif;
+  font-style: oblique;
+  line-height: 2.5em;
+}
+
+.fontstyle2-h2 {
+  font: bold 20px arial, Helvetica, sans-serif;
+  font-style: oblique;
+  line-height: 1.6em;
+}
+
+.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ul-sett {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  list-style-position: inside;
+}
+
+.li-hover a:hover {
+  color: #03aa03;
+}
+
+.footer-black-width {
+  background-color: #000;
+  border: 2px;
+  border: 1px solid;
+  color: rgb(249, 249, 249);
+  height: 50px;
+  margin: 0 auto;
+  width: 0 auto;
+}
+
+.blogpostcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.blogpost { 
+  border: 3px solid #7b1616;
+  color: rgb(4, 4, 83);
+  width: 300px;
+}
+
+.blogpost-child {
+  flex-grow: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #add8e6;
+  }
+
+  .a-sett {
+    font-size: 10px;
+    line-height: normal;
+  }
+
+  .text-all-center-txt-dec-ovrflw {
+    font-size: 22px;
+  }
+
+  .fontstyle2-h2 {
+    font-size: 16px;
+  }
+
+  .fontstyle1-header {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body-background {
+    background-color: #a9a9a9;
+  }
+
+  .light-blue-headings-letters {
+    color: #a4c7f0;
+  }
+
+  .text-all-center-txt-dec-ovrflw {
+    font-size: 18px;
+  }
+
+  .fontstyle2-h2 {
+    font-size: 16px;
+    line-height: 1px;
+  }
+
+  .fontstyle1-header {
+    font-size: 18px;
+    line-height: 1px;
+  }
+
+}
